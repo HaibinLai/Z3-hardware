@@ -1,0 +1,45 @@
+{
+  "z3_version": "5.3.3",
+  "queries": [
+    {
+      "name": "fp32_denominator_rounds_to_one",
+      "status": "unsat",
+      "solver_seconds": 0.019
+    },
+    {
+      "name": "fp32_standard_gradient_is_zero",
+      "status": "unsat",
+      "solver_seconds": 0.184
+    },
+    {
+      "name": "fp32_fixed_gradient_negative",
+      "status": "unsat",
+      "solver_seconds": 0.136
+    },
+    {
+      "name": "vortex_tfr_sticky_matches_discarded_bits",
+      "status": "unsat",
+      "solver_seconds": 0.006
+    },
+    {
+      "name": "fp32_scaled_exact_error_range",
+      "status": "unsat",
+      "solver_seconds": 0.004
+    },
+    {
+      "name": "fp32_scaled_lower_endpoint_attained",
+      "status": "sat",
+      "solver_seconds": 0.004,
+      "model": "[s_bits = 813694976]"
+    },
+    {
+      "name": "fp32_scaled_upper_endpoint_attained",
+      "status": "sat",
+      "solver_seconds": 0.003,
+      "model": "[s_bits = 864026624]"
+    }
+  ],
+  "softmax_scope": "s is a positive FP32 value in [2^-30,2^-24]; arithmetic graph only, exp/log not modeled.",
+  "softmax_exact_real_signed_error_bound": "2^-30/(1+2^-30) <= standard_target_gradient - (-s/(1+s)) <= 2^-24/(1+2^-24)",
+  "vortex_scope": "Manual translation of one combinational sticky-bit expression; not RTL equivalence or full FPU proof."
+}

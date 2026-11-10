@@ -1,0 +1,31 @@
+{
+  "source": "Ventus dependencies/fpuv2 at 7ea30df00f9353f2e8645b32665b13f9b3f69e6d, Tensor.scala TCDotProduct and TCMulPipe/TCAddPipe",
+  "assumption": "Each multiply and add stage implements IEEE FP32 round-to-nearest-even. This is a source-level numerical model, not generated RTL or silicon proof.",
+  "a": [
+    16777216,
+    1,
+    1,
+    -16777216
+  ],
+  "b": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "c": 0,
+  "products": [
+    16777216.0,
+    1.0,
+    1.0,
+    -16777216.0
+  ],
+  "pair_02": 16777216.0,
+  "pair_13": -16777215.0,
+  "model_output": 1.0,
+  "torch_dot_cpu": 1.0,
+  "torch_matmul_cpu": 0.0,
+  "exact_integer_result": 2,
+  "signed_model_error": -1.0,
+  "z3_status_for_model_output_not_1": "unsat"
+}

@@ -1,0 +1,75 @@
+{
+  "domain": {
+    "a_i": [
+      -16777216,
+      -1,
+      0,
+      1,
+      16777216
+    ],
+    "b_i": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "c": 0,
+    "number_of_inputs": 625
+  },
+  "scope": "Complete enumeration of this finite domain on PyTorch CPU; Ventus is a source-structure model with assumed IEEE RNE stages, not RTL output.",
+  "error_bounds": {
+    "ventus_tree_model": {
+      "min_error": -2.0,
+      "max_error": 2.0,
+      "min_witness": [
+        0,
+        1,
+        1,
+        16777216
+      ],
+      "max_witness": [
+        -16777216,
+        -16777216,
+        -1,
+        -1
+      ]
+    },
+    "torch_dot_cpu": {
+      "min_error": -2.0,
+      "max_error": 2.0,
+      "min_witness": [
+        0,
+        1,
+        1,
+        16777216
+      ],
+      "max_witness": [
+        -16777216,
+        -16777216,
+        -1,
+        -1
+      ]
+    },
+    "torch_matmul_cpu": {
+      "min_error": -3.0,
+      "max_error": 3.0,
+      "min_witness": [
+        1,
+        16777216,
+        1,
+        1
+      ],
+      "max_witness": [
+        -16777216,
+        -1,
+        -1,
+        -1
+      ]
+    }
+  },
+  "disagreement_counts": {
+    "tree_vs_dot": 128,
+    "tree_vs_matmul": 130,
+    "dot_vs_matmul": 88
+  }
+}

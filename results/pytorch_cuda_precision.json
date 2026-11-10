@@ -1,0 +1,239 @@
+{
+  "torch_version": "2.14.1+cu126",
+  "cuda_version": "12.6",
+  "gpu": "Tesla V100-PCIE-32GB",
+  "capability": [
+    7,
+    0
+  ],
+  "arch_list": [
+    "sm_50",
+    "sm_60",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90"
+  ],
+  "rows": [
+    {
+      "dtype": "torch.float32",
+      "margin": 16,
+      "reference_target_gradient_90digit": "-1.12535162055094990583521815803322969055936561436284879079312950842368306956104018730884725E-7",
+      "standard_loss": 1.1920928244535389e-07,
+      "standard_gradient": [
+        -1.1920928955078125e-07,
+        1.1253517584464134e-07
+      ],
+      "fixed_loss": 1.1253516873921399e-07,
+      "fixed_gradient": [
+        -1.1253516163378663e-07,
+        1.1253516163378663e-07
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "margin": 17,
+      "reference_target_gradient_90digit": "-4.13993754739433060092359962518837526079556791705402236940369151564645622995814948568922296E-8",
+      "standard_loss": 0.0,
+      "standard_gradient": [
+        0.0,
+        4.139937814784389e-08
+      ],
+      "fixed_loss": 4.139937814784389e-08,
+      "fixed_gradient": [
+        -4.139937814784389e-08,
+        4.139937814784389e-08
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "margin": 18,
+      "reference_target_gradient_90digit": "-1.52299795127603489444082088012373198136254308085308054237978802612208466883042202303134031E-8",
+      "standard_loss": 0.0,
+      "standard_gradient": [
+        0.0,
+        1.5229980832032197e-08
+      ],
+      "fixed_loss": 1.5229980832032197e-08,
+      "fixed_gradient": [
+        -1.5229980832032197e-08,
+        1.5229980832032197e-08
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "margin": 20,
+      "reference_target_gradient_90digit": "-2.06115361819020358143086212947459269075249001886929965228159905955061658694674333752465489E-9",
+      "standard_loss": 0.0,
+      "standard_gradient": [
+        0.0,
+        2.061153470123145e-09
+      ],
+      "fixed_loss": 2.061153470123145e-09,
+      "fixed_gradient": [
+        -2.061153470123145e-09,
+        2.061153470123145e-09
+      ]
+    },
+    {
+      "dtype": "torch.float32",
+      "margin": 40,
+      "reference_target_gradient_90digit": "-4.24835425529158897728072090440450637143476271788616807493301847253489810258441856638057801E-18",
+      "standard_loss": 0.0,
+      "standard_gradient": [
+        0.0,
+        4.24835413113866e-18
+      ],
+      "fixed_loss": 4.24835413113866e-18,
+      "fixed_gradient": [
+        -4.24835413113866e-18,
+        4.24835413113866e-18
+      ]
+    },
+    {
+      "dtype": "torch.float64",
+      "margin": 16,
+      "reference_target_gradient_90digit": "-1.12535162055094990583521815803322969055936561436284879079312950842368306956104018730884725E-7",
+      "standard_loss": 1.1253516840233601e-07,
+      "standard_gradient": [
+        -1.1253516207787584e-07,
+        1.1253516205509495e-07
+      ],
+      "fixed_loss": 1.1253516838717682e-07,
+      "fixed_gradient": [
+        -1.12535162055095e-07,
+        1.12535162055095e-07
+      ]
+    },
+    {
+      "dtype": "torch.float64",
+      "margin": 17,
+      "reference_target_gradient_90digit": "-4.13993754739433060092359962518837526079556791705402236940369151564645622995814948568922296E-8",
+      "standard_loss": 4.139937640271127e-08,
+      "standard_gradient": [
+        -4.1399375594330934e-08,
+        4.1399375473943226e-08
+      ],
+      "fixed_loss": 4.139937633089748e-08,
+      "fixed_gradient": [
+        -4.1399375473943306e-08,
+        4.1399375473943306e-08
+      ]
+    },
+    {
+      "dtype": "torch.float64",
+      "margin": 18,
+      "reference_target_gradient_90digit": "-1.52299795127603489444082088012373198136254308085308054237978802612208466883042202303134031E-8",
+      "standard_loss": 1.522997960583303e-08,
+      "standard_gradient": [
+        -1.5229979499764568e-08,
+        1.522997951276036e-08
+      ],
+      "fixed_loss": 1.5229979628736488e-08,
+      "fixed_gradient": [
+        -1.522997951276035e-08,
+        1.522997951276035e-08
+      ]
+    },
+    {
+      "dtype": "torch.float64",
+      "margin": 20,
+      "reference_target_gradient_90digit": "-2.06115361819020358143086212947459269075249001886929965228159905955061658694674333752465489E-9",
+      "standard_loss": 2.0611536900435727e-09,
+      "standard_gradient": [
+        -2.06115369216775e-09,
+        2.061153618190205e-09
+      ],
+      "fixed_loss": 2.061153620314381e-09,
+      "fixed_gradient": [
+        -2.0611536181902033e-09,
+        2.0611536181902033e-09
+      ]
+    },
+    {
+      "dtype": "torch.float64",
+      "margin": 40,
+      "reference_target_gradient_90digit": "-4.24835425529158897728072090440450637143476271788616807493301847253489810258441856638057801E-18",
+      "standard_loss": 0.0,
+      "standard_gradient": [
+        0.0,
+        4.248354255291589e-18
+      ],
+      "fixed_loss": 4.248354255291589e-18,
+      "fixed_gradient": [
+        -4.248354255291589e-18,
+        4.248354255291589e-18
+      ]
+    }
+  ],
+  "example": {
+    "a": [
+      16777216,
+      1,
+      1,
+      -16777216
+    ],
+    "b": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "exact": 2,
+    "torch_dot_cuda": 1.0,
+    "torch_matmul_cuda": 0.0
+  },
+  "finite_domain": {
+    "a_i": [
+      -16777216,
+      -1,
+      0,
+      1,
+      16777216
+    ],
+    "b_i": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "inputs": 625,
+    "error_bounds": {
+      "torch_dot_cuda": {
+        "min_error": -2.0,
+        "max_error": 2.0,
+        "min_witness": [
+          0,
+          1,
+          1,
+          16777216
+        ],
+        "max_witness": [
+          -16777216,
+          -16777216,
+          -1,
+          -1
+        ]
+      },
+      "torch_matmul_cuda": {
+        "min_error": -3.0,
+        "max_error": 3.0,
+        "min_witness": [
+          1,
+          16777216,
+          1,
+          1
+        ],
+        "max_witness": [
+          -16777216,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    "dot_matmul_disagreements": 88
+  },
+  "scope": "Measurements on one NVIDIA V100 with a pinned PyTorch CUDA build; no claim about Vortex or Ventus RTL."
+}

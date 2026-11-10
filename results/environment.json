@@ -1,0 +1,29 @@
+{
+  "host": "eightsocket",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "torch": "2.15.0+cpu",
+  "z3": "5.3.3",
+  "vortex_commit": "127178d6375c3cb525e2c8af0c77b5f2d52ed93e",
+  "ventus_commit": "681172541a8a34ffb43c483a19c075acbc11a4eb",
+  "ventus_fpuv2_commit": "7ea30df00f9353f2e8645b32665b13f9b3f69e6d",
+  "iverilog_version": "Icarus Verilog version 12.0 (stable) ()",
+  "verilator_version": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)",
+  "gpu_note": "CUDA validation ran on one V100 with CUDA_VISIBLE_DEVICES=0; open GPU RTL simulation ran on CPU.",
+  "torch_cuda": "2.14.1+cu126",
+  "cuda_runtime": "12.6",
+  "gpu_name": "Tesla V100-PCIE-32GB",
+  "gpu_capability": [
+    7,
+    0
+  ],
+  "gpu_arch_list": [
+    "sm_50",
+    "sm_60",
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90"
+  ]
+}

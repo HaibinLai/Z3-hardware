@@ -1,0 +1,30 @@
+{
+  "torch_version": "2.14.1+cu126",
+  "gpu": "Tesla V100-PCIE-32GB",
+  "ce_margin18": {
+    "cpu": {
+      "loss": 0.0,
+      "gradient": [
+        0.0,
+        1.5229979055675358e-08
+      ]
+    },
+    "cuda": {
+      "loss": 0.0,
+      "gradient": [
+        0.0,
+        1.5229980832032197e-08
+      ]
+    }
+  },
+  "finite_domain_inputs": 625,
+  "cpu_cuda_mismatch_counts": {
+    "dot": 0,
+    "matmul": 0
+  },
+  "first_witnesses": {
+    "dot": null,
+    "matmul": null
+  },
+  "scope": "Same PyTorch build; only stated cases/domain, not all inputs."
+}
