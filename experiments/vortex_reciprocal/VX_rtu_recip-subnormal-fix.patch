@@ -1,0 +1,54 @@
+--- a/hw/rtl/rtu/VX_rtu_recip.sv
++++ b/hw/rtl/rtu/VX_rtu_recip.sv
+@@ -11,6 +11,7 @@
+ // See the License for the specific language governing permissions and
+ // limitations under the License.
+ 
++// Modified 2026-11-10: repair DSP_SEED subnormal output rounding and exponent wrap.
+ // VX_rtu_recip — F32 reciprocal (1/x) for the ray-setup datapath (inv_d = 1/dir),
+ // with two interchangeable backends selected by BACKEND:
+ //
+@@ -19,7 +20,9 @@
+ //   DSP_SEED : a seed-table reciprocal — a BlockRAM seed ROM gives ~10 bits of
+ //              1/significand, refined by two Newton-Raphson steps whose multiplies
+ //              map to DSP48. Trades ~2K LUT/unit onto the idle BRAM + DSP blocks.
+-//              ~9e-8 max relative error (well inside the RTU's 1e-4 tolerance).
++//              Max relative error: < 6.051e-8 for normal reciprocal outputs;
++//              < 2.393e-7 over all finite normal FP32 inputs (both signs).
++//              Subnormal input policy is described below; not an IEEE divider.
+ //
+ // A zero (or, flushed, subnormal) operand returns +FLT_MAX rather than inf
+ // (SimX rtu::ray_recip): a slab along a zero direction component then stays
+@@ -138,13 +141,31 @@
+         wire [32:0] s5_2y  = {s5_y2, 1'b0};              // 2y, value = s5_2y/2^31
+         wire [31:0] s5_d   = s5_2y - 33'h8000_0000;      // (2y - 1)
+         wire [23:0] s5_fr  = s5_d[31:8] + {23'b0, s5_d[7]};  // round to 23 frac bits
+-        wire [8:0]  s5_exf = 9'd253 - {1'b0, s5_exp};
++        wire signed [9:0] s5_exf = 10'sd253 - $signed({2'b00, s5_exp});
+         wire        s5_ovf = s5_fr[23];                  // 2y rounded up to 2.0
+         wire [7:0]  s5_expf = s5_ovf ? (s5_exf[7:0] + 8'd1) : s5_exf[7:0];
+         wire [22:0] s5_frac = s5_ovf ? 23'd0 : s5_fr[22:0];
++
++        // A reciprocal of a finite normal input can be subnormal only at
++        // input exponents 253 and 254.  Form its significand directly from
++        // the Q1.31 NR result: M = y2 * 2^(245 - input_exp), so the two
++        // shifts are 8 and 9.  Round once, before packing, to avoid double
++        // rounding through the normal FP32 result.
++        wire s5_sub_shift9 = (s5_exp == 8'd254);
++        wire [23:0] s5_sub_man = s5_sub_shift9
++                              ? {1'b0, s5_y2[31:9]} : s5_y2[31:8];
++        wire s5_sub_guard = s5_sub_shift9 ? s5_y2[8] : s5_y2[7];
++        wire s5_sub_sticky = s5_sub_shift9 ? (|s5_y2[7:0]) : (|s5_y2[6:0]);
++        wire s5_sub_round = s5_sub_guard && (s5_sub_sticky || s5_sub_man[0]);
++        wire [24:0] s5_sub_rounded = {1'b0, s5_sub_man} + {24'b0, s5_sub_round};
++        // Retain the complete rounding carry.  Bit 23 naturally encodes a
++        // carry into the minimum normal FP32 value; no signed exponent is
++        // truncated into an Inf/NaN field.
++        wire [31:0] s5_sub_result = {s5_sign, 6'b0, s5_sub_rounded};
+         assign result = s5_inf  ? F32_MAX
+                       : s5_nan  ? 32'h7FC00000
+                       : s5_zero ? {s5_sign, 8'h00, 23'd0}
++                      : (s5_exp >= 8'd253) ? s5_sub_result
+                       :           {s5_sign, s5_expf, s5_frac};
+         `UNUSED_PARAM (LATENCY)
+     end else begin : g_lut_nr

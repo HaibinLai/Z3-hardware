@@ -1,0 +1,88 @@
+{
+  "vectors_per_variant": 14850,
+  "native_comparisons": 29700,
+  "model_mismatches": 0,
+  "directed": 33,
+  "original_transition_checks": [
+    {
+      "name": "original-3ffff020-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "original-3ffff020-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "original-7ec00000-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "original-7ec00000-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "original-7effe45d-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "original-7effe45d-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "original-7f400000-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "original-7f400000-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "original-7f7fe976-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "original-7f7fe976-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "fixed-3ffff020-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "fixed-3ffff020-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "fixed-7ec00000-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "fixed-7ec00000-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "fixed-7effe45d-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "fixed-7effe45d-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "fixed-7f400000-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "fixed-7f400000-mismatch",
+      "status": "unsat"
+    },
+    {
+      "name": "fixed-7f7fe976-attainable",
+      "status": "sat"
+    },
+    {
+      "name": "fixed-7f7fe976-mismatch",
+      "status": "unsat"
+    }
+  ]
+}

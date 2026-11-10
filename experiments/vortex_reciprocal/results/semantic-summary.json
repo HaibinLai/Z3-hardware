@@ -1,0 +1,42 @@
+[
+  {
+    "name": "normal-path-bit-preservation",
+    "status": "unsat",
+    "seconds": 0.1799513339647092
+  },
+  {
+    "name": "special-input-policy-preserved",
+    "status": "unsat",
+    "seconds": 0.08928470796672627
+  },
+  {
+    "name": "normal-exponent-propagation",
+    "status": "unsat",
+    "seconds": 0.2016494999988936
+  },
+  {
+    "name": "all-normal-input-sign-symmetry",
+    "status": "unsat",
+    "seconds": 0.04915862501366064
+  },
+  {
+    "name": "special-value-policy",
+    "status": "unsat",
+    "seconds": 0.16790412500267848
+  },
+  {
+    "name": "subnormal-rne-e253",
+    "status": "unsat",
+    "seconds": 0.02714987500803545
+  },
+  {
+    "name": "subnormal-rne-e254",
+    "status": "unsat",
+    "seconds": 0.022296292008832097
+  },
+  {
+    "name": "all-normal-exponent-coverage",
+    "status": "unsat",
+    "seconds": 0.005916791036725044
+  }
+]

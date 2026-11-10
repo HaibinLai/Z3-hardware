@@ -1,0 +1,14 @@
+# Large generated proof and simulation data
+results/certificates/
+results/partitions.json
+results/replay-audit.json
+results/probes/*.txt
+results/*.log
+variants/*/build/obj/
+variants/*/build/*.log
+variants/*/build/*.command
+variants/*/build/VortexRecipTop.sv
+variants/*/scripts/
+variants/*/results/native-*-outputs.bin
+variants/*/results/pipeline/arbitrary-changing-inputs.smt2
+.venv/

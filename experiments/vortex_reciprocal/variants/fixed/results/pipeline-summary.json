@@ -1,0 +1,9 @@
+{
+  "enabled_edges": 5,
+  "feasible": "sat",
+  "output_mismatch": "unsat",
+  "input_scope": "All 32-bit patterns at all six input times, independently symbolic",
+  "configuration": "enable=1 and mask=1",
+  "seconds": 0.49077552498783916,
+  "method": "Z3 word-level equality elimination, then QF_BV mismatch check"
+}

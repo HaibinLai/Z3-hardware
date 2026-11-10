@@ -1,0 +1,431 @@
+[
+  {
+    "x": "00000000",
+    "original": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": null
+    }
+  },
+  {
+    "x": "00000001",
+    "original": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "35184355311617/35184372088832"
+    },
+    "fixed": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "35184355311617/35184372088832"
+    }
+  },
+  {
+    "x": "007fffff",
+    "original": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "105553091100673/35184372088832"
+    },
+    "fixed": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "105553091100673/35184372088832"
+    }
+  },
+  {
+    "x": "00800000",
+    "original": {
+      "bits": "7e800000",
+      "finite": true,
+      "relative_error": "0"
+    },
+    "fixed": {
+      "bits": "7e800000",
+      "finite": true,
+      "relative_error": "0"
+    }
+  },
+  {
+    "x": "3f800000",
+    "original": {
+      "bits": "3f800000",
+      "finite": true,
+      "relative_error": "0"
+    },
+    "fixed": {
+      "bits": "3f800000",
+      "finite": true,
+      "relative_error": "0"
+    }
+  },
+  {
+    "x": "3ffff020",
+    "original": {
+      "bits": "3f0007f1",
+      "finite": true,
+      "relative_error": "266097/4398046511104"
+    },
+    "fixed": {
+      "bits": "3f0007f1",
+      "finite": true,
+      "relative_error": "266097/4398046511104"
+    }
+  },
+  {
+    "x": "3fffffff",
+    "original": {
+      "bits": "3f000001",
+      "finite": true,
+      "relative_error": "8388607/140737488355328"
+    },
+    "fixed": {
+      "bits": "3f000001",
+      "finite": true,
+      "relative_error": "8388607/140737488355328"
+    }
+  },
+  {
+    "x": "7e800000",
+    "original": {
+      "bits": "00800000",
+      "finite": true,
+      "relative_error": "0"
+    },
+    "fixed": {
+      "bits": "00800000",
+      "finite": true,
+      "relative_error": "0"
+    }
+  },
+  {
+    "x": "7ec00000",
+    "original": {
+      "bits": "002aaaab",
+      "finite": true,
+      "relative_error": "8388607/16777216"
+    },
+    "fixed": {
+      "bits": "00555555",
+      "finite": true,
+      "relative_error": "1/16777216"
+    }
+  },
+  {
+    "x": "7effe45d",
+    "original": {
+      "bits": "00000dd3",
+      "finite": true,
+      "relative_error": "70309394648665/70368744177664"
+    },
+    "fixed": {
+      "bits": "004006ea",
+      "finite": true,
+      "relative_error": "4224385/35184372088832"
+    }
+  },
+  {
+    "x": "7efffffe",
+    "original": {
+      "bits": "00000001",
+      "finite": true,
+      "relative_error": "35184363700225/35184372088832"
+    },
+    "fixed": {
+      "bits": "00400001",
+      "finite": true,
+      "relative_error": "4194303/35184372088832"
+    }
+  },
+  {
+    "x": "7effffff",
+    "original": {
+      "bits": "00000001",
+      "finite": true,
+      "relative_error": "70368727400449/70368744177664"
+    },
+    "fixed": {
+      "bits": "00400000",
+      "finite": true,
+      "relative_error": "1/16777216"
+    }
+  },
+  {
+    "x": "7f000000",
+    "original": {
+      "bits": "00000000",
+      "finite": true,
+      "relative_error": "1"
+    },
+    "fixed": {
+      "bits": "00400000",
+      "finite": true,
+      "relative_error": "0"
+    }
+  },
+  {
+    "x": "7f400000",
+    "original": {
+      "bits": "7faaaaab",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "002aaaab",
+      "finite": true,
+      "relative_error": "1/8388608"
+    }
+  },
+  {
+    "x": "7f7fe976",
+    "original": {
+      "bits": "7f800b46",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "002002d2",
+      "finite": true,
+      "relative_error": "2104243/8796093022208"
+    }
+  },
+  {
+    "x": "7f7ffffc",
+    "original": {
+      "bits": "7f800002",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "00200001",
+      "finite": true,
+      "relative_error": "2097151/8796093022208"
+    }
+  },
+  {
+    "x": "7f7fffff",
+    "original": {
+      "bits": "7f800001",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "00200000",
+      "finite": true,
+      "relative_error": "1/16777216"
+    }
+  },
+  {
+    "x": "7f800000",
+    "original": {
+      "bits": "00000000",
+      "finite": true,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "00000000",
+      "finite": true,
+      "relative_error": null
+    }
+  },
+  {
+    "x": "7f800001",
+    "original": {
+      "bits": "7fc00000",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "7fc00000",
+      "finite": false,
+      "relative_error": null
+    }
+  },
+  {
+    "x": "7fc00000",
+    "original": {
+      "bits": "7fc00000",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "7fc00000",
+      "finite": false,
+      "relative_error": null
+    }
+  },
+  {
+    "x": "80000000",
+    "original": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": null
+    }
+  },
+  {
+    "x": "80000001",
+    "original": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "35184388866047/35184372088832"
+    },
+    "fixed": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "35184388866047/35184372088832"
+    }
+  },
+  {
+    "x": "807fffff",
+    "original": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "175921835278337/35184372088832"
+    },
+    "fixed": {
+      "bits": "7f7fffff",
+      "finite": true,
+      "relative_error": "175921835278337/35184372088832"
+    }
+  },
+  {
+    "x": "bf800000",
+    "original": {
+      "bits": "bf800000",
+      "finite": true,
+      "relative_error": "0"
+    },
+    "fixed": {
+      "bits": "bf800000",
+      "finite": true,
+      "relative_error": "0"
+    }
+  },
+  {
+    "x": "bffff020",
+    "original": {
+      "bits": "bf0007f1",
+      "finite": true,
+      "relative_error": "266097/4398046511104"
+    },
+    "fixed": {
+      "bits": "bf0007f1",
+      "finite": true,
+      "relative_error": "266097/4398046511104"
+    }
+  },
+  {
+    "x": "bfffffff",
+    "original": {
+      "bits": "bf000001",
+      "finite": true,
+      "relative_error": "8388607/140737488355328"
+    },
+    "fixed": {
+      "bits": "bf000001",
+      "finite": true,
+      "relative_error": "8388607/140737488355328"
+    }
+  },
+  {
+    "x": "fec00000",
+    "original": {
+      "bits": "802aaaab",
+      "finite": true,
+      "relative_error": "8388607/16777216"
+    },
+    "fixed": {
+      "bits": "80555555",
+      "finite": true,
+      "relative_error": "1/16777216"
+    }
+  },
+  {
+    "x": "feffe45d",
+    "original": {
+      "bits": "80000dd3",
+      "finite": true,
+      "relative_error": "70309394648665/70368744177664"
+    },
+    "fixed": {
+      "bits": "804006ea",
+      "finite": true,
+      "relative_error": "4224385/35184372088832"
+    }
+  },
+  {
+    "x": "fefffffe",
+    "original": {
+      "bits": "80000001",
+      "finite": true,
+      "relative_error": "35184363700225/35184372088832"
+    },
+    "fixed": {
+      "bits": "80400001",
+      "finite": true,
+      "relative_error": "4194303/35184372088832"
+    }
+  },
+  {
+    "x": "ff400000",
+    "original": {
+      "bits": "ffaaaaab",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "802aaaab",
+      "finite": true,
+      "relative_error": "1/8388608"
+    }
+  },
+  {
+    "x": "ff7fe976",
+    "original": {
+      "bits": "ff800b46",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "802002d2",
+      "finite": true,
+      "relative_error": "2104243/8796093022208"
+    }
+  },
+  {
+    "x": "ff7ffffc",
+    "original": {
+      "bits": "ff800002",
+      "finite": false,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "80200001",
+      "finite": true,
+      "relative_error": "2097151/8796093022208"
+    }
+  },
+  {
+    "x": "ff800000",
+    "original": {
+      "bits": "80000000",
+      "finite": true,
+      "relative_error": null
+    },
+    "fixed": {
+      "bits": "80000000",
+      "finite": true,
+      "relative_error": null
+    }
+  }
+]

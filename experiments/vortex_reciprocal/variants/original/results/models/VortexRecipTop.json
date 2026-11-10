@@ -1,0 +1,12 @@
+{
+  "top": "VortexRecipTop",
+  "lanes": 1,
+  "clock_edges": 5,
+  "feasibility": "sat",
+  "generic_extraction_mismatch": "unsat",
+  "required_scope": "per-case extraction proof before optimization",
+  "invalid_output": "unsat",
+  "expression_nodes": 2150,
+  "reified_reads": 228,
+  "seconds": 0.8260798089904711
+}

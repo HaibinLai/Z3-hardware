@@ -1,0 +1,21 @@
+{
+  "witness_input": "7f7ffffc",
+  "input_exact": "340282285791300048856692911642763067392",
+  "threshold": "9/100000000",
+  "conclusion": "No finite FP32 output can meet 9e-8 relative error for this normal input",
+  "correctly_rounded_error": "2097151/8796093022208",
+  "cases": [
+    {
+      "name": "subnormal-output",
+      "status": "unsat"
+    },
+    {
+      "name": "positive-normal-output",
+      "status": "unsat"
+    },
+    {
+      "name": "nonpositive-output",
+      "status": "unsat"
+    }
+  ]
+}

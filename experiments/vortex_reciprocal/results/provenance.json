@@ -1,0 +1,15 @@
+{
+  "base_commit": "127178d6375c3cb525e2c8af0c77b5f2d52ed93e",
+  "variants": [
+    {
+      "variant": "original",
+      "source_sha256": "1262df6cb4241c95af716281e214fcb28163f867204d863db879ced1a92f8b3f"
+    },
+    {
+      "variant": "fixed",
+      "source_sha256": "8eb10023d0c588ba8340bb8de77a948254b8d4b2a50e25cbb1cd2523b81f2e8a"
+    }
+  ],
+  "DSP_SEED": 1,
+  "enabled_edges": 5
+}

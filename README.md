@@ -52,3 +52,13 @@ CPU 和 CUDA 虚拟环境的完整包版本分别在 `requirements-lock.txt` 和
 ### 同一 PyTorch 版本的 CPU/GPU 对照
 
 在同一个 `2.14.1+cu126` 构建中，FP32 logits `[0,-18]` 的标准交叉熵目标梯度在 CPU 与 V100 都为 0，另一类梯度分别是 `1.5229979055675358e-8` 和 `1.5229980832032197e-8`，差 `1.7763568394002505e-15`（该量级的一个 FP32 ULP）。同版本的 625 个点积输入上，CPU 与 CUDA 的 `dot` 相互一致，`matmul` 也相互一致；`dot` 与 `matmul` 之间的 88 个差异仍然存在。详见 `results/pytorch_cpu_cuda_matched.json`。此对照固定了 PyTorch 版本，但不固定 CPU 与 CUDA 的底层 `exp` 实现。
+
+## Vortex reciprocal repair and certified accuracy
+
+A separate [reciprocal experiment](experiments/vortex_reciprocal/) contains the original and repaired `VX_rtu_recip` DSP_SEED RTL, an applyable patch, standalone build snapshots, Z3 models and proof scripts, exact partition bounds, and English comparison figures. It preserves normal-output bits while fixing subnormal-output packing and exponent wraparound.
+
+For all finite **normal** FP32 inputs of either sign, the repaired worst-case exact relative error `|x*y-1|` is **`2104243 / 2^43 ≈ 2.3922473247e-7`**, attained at input `0x7f7fe976`. Zero/subnormal input policies are retained and excluded from this guarantee. This is not a claim of correct rounding for every input or verification of the complete GPU.
+
+The study used complete finite-domain Z3 instantiation of 3,072 partitions (25,165,824 positive input cases), exponent/sign proofs, 50,331,648 native RTL cases, and 9,253 successfully replayed solver queries. Large generated arrays and expanded certificates are reproducible and omitted from Git. See the experiment README for scope, trust assumptions, and reproduction commands; its dependencies are separate from the prototype above.
+
+![Reciprocal accuracy before and after repair](experiments/vortex_reciprocal/figures/reciprocal-before-after-en.png)

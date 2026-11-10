@@ -1,0 +1,13 @@
+{
+  "build_from_preprocessed_snapshots": true,
+  "records": [
+    {
+      "variant": "original",
+      "native_outputs_match_source_build": true
+    },
+    {
+      "variant": "fixed",
+      "native_outputs_match_source_build": true
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "normal_inputs_domain": "1 <= biased exponent <= 254, both signs; documented zero/subnormal-input policy retained",
+  "cases_per_region": 8388608,
+  "certified_partitions": 3072,
+  "certified_positive_inputs": 25165824,
+  "native_vectors": 50331648,
+  "native_z3_fixed_comparisons": 25165824,
+  "native_z3_mismatches": 0,
+  "regions": [
+    {
+      "exponent": 127,
+      "original": {
+        "finite": 8388608,
+        "nan": 0,
+        "infinity": 0,
+        "zero": 0,
+        "max_abs_relative_error": "266097/4398046511104",
+        "max_abs_relative_error_float": 6.050345291441772e-08,
+        "witness_input": "3ffff020",
+        "witness_output": "3f0007f1",
+        "correctly_rounded_mismatches": 47617,
+        "max_fp32_ordered_distance": 1,
+        "signed_ulp_distance_counts": {
+          "0": 8340991,
+          "1": 47617
+        },
+        "distinct_ulp_distances": 2,
+        "signed_ulp_distance_range": [
+          0,
+          1
+        ]
+      },
+      "fixed": {
+        "finite": 8388608,
+        "nan": 0,
+        "infinity": 0,
+        "zero": 0,
+        "max_abs_relative_error": "266097/4398046511104",
+        "max_abs_relative_error_float": 6.050345291441772e-08,
+        "witness_input": "3ffff020",
+        "witness_output": "3f0007f1",
+        "correctly_rounded_mismatches": 47617,
+        "max_fp32_ordered_distance": 1,
+        "signed_ulp_distance_counts": {
+          "0": 8340991,
+          "1": 47617
+        },
+        "distinct_ulp_distances": 2,
+        "signed_ulp_distance_range": [
+          0,
+          1
+        ]
+      },
+      "certified_signed_bounds": [
+        "-4128641/70368744177664",
+        "266097/4398046511104"
+      ],
+      "certified_max_abs": "266097/4398046511104",
+      "certified_witness": "3ffff020",
+      "reference_correct_rounding": {
+        "max_abs_relative_error": "8388607/140737488355328",
+        "max_abs_relative_error_float": 5.960463766996327e-08,
+        "witness_input": "3fffffff",
+        "witness_output": "3f000001",
+        "method": "Exact integer quotient/remainder, nearest-even; full 2^23-input table"
+      }
+    },
+    {
+      "exponent": 253,
+      "original": {
+        "finite": 8388608,
+        "nan": 0,
+        "infinity": 0,
+        "zero": 0,
+        "max_abs_relative_error": "35184363700225/35184372088832",
+        "max_abs_relative_error_float": 0.9999997615814493,
+        "witness_input": "7efffffe",
+        "witness_output": "00000001",
+        "correctly_rounded_mismatches": 8388607,
+        "max_fp32_ordered_distance": 4194304,
+        "signed_ulp_distance_counts": null,
+        "distinct_ulp_distances": 3776103,
+        "signed_ulp_distance_range": [
+          -4194304,
+          0
+        ]
+      },
+      "fixed": {
+        "finite": 8388608,
+        "nan": 0,
+        "infinity": 0,
+        "zero": 0,
+        "max_abs_relative_error": "4224385/35184372088832",
+        "max_abs_relative_error_float": 1.2006424299215723e-07,
+        "witness_input": "7effe45d",
+        "witness_output": "004006ea",
+        "correctly_rounded_mismatches": 18777,
+        "max_fp32_ordered_distance": 1,
+        "signed_ulp_distance_counts": {
+          "-1": 5446,
+          "0": 8369831,
+          "1": 13331
+        },
+        "distinct_ulp_distances": 3,
+        "signed_ulp_distance_range": [
+          -1,
+          1
+        ]
+      },
+      "certified_signed_bounds": [
+        "-2047/17179869184",
+        "4224385/35184372088832"
+      ],
+      "certified_max_abs": "4224385/35184372088832",
+      "certified_witness": "7effe45d",
+      "reference_correct_rounding": {
+        "max_abs_relative_error": "4194303/35184372088832",
+        "max_abs_relative_error_float": 1.1920926112907182e-07,
+        "witness_input": "7efffffe",
+        "witness_output": "00400001",
+        "method": "Exact integer quotient/remainder, nearest-even; full 2^23-input table"
+      }
+    },
+    {
+      "exponent": 254,
+      "original": {
+        "finite": 1,
+        "nan": 8388607,
+        "infinity": 0,
+        "zero": 1,
+        "max_abs_relative_error": null,
+        "max_abs_relative_error_float": null,
+        "note": "Nonfinite outputs: no real-valued relative-error bound over the whole region"
+      },
+      "fixed": {
+        "finite": 8388608,
+        "nan": 0,
+        "infinity": 0,
+        "zero": 0,
+        "max_abs_relative_error": "2104243/8796093022208",
+        "max_abs_relative_error_float": 2.392247324678465e-07,
+        "witness_input": "7f7fe976",
+        "witness_output": "002002d2",
+        "correctly_rounded_mismatches": 9193,
+        "max_fp32_ordered_distance": 1,
+        "signed_ulp_distance_counts": {
+          "-1": 2699,
+          "0": 8379415,
+          "1": 6494
+        },
+        "distinct_ulp_distances": 3,
+        "signed_ulp_distance_range": [
+          -1,
+          1
+        ]
+      },
+      "certified_signed_bounds": [
+        "-2095829/8796093022208",
+        "2104243/8796093022208"
+      ],
+      "certified_max_abs": "2104243/8796093022208",
+      "certified_witness": "7f7fe976",
+      "reference_correct_rounding": {
+        "max_abs_relative_error": "2097151/8796093022208",
+        "max_abs_relative_error_float": 2.3841846541472478e-07,
+        "witness_input": "7f7ffffc",
+        "witness_output": "00200001",
+        "method": "Exact integer quotient/remainder, nearest-even; full 2^23-input table"
+      }
+    }
+  ],
+  "global_normal_input_max_abs_relative_error": "2104243/8796093022208",
+  "global_normal_input_max_abs_relative_error_float": 2.392247324678465e-07,
+  "global_witness": "7f7fe976",
+  "normal_path_bit_identical": true,
+  "finite_normal_inputs_have_finite_nonzero_outputs": true,
+  "input_subnormal_policy_unchanged": true
+}
